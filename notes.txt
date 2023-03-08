@@ -1,0 +1,16 @@
+1. Create a service principal, using the Cloud Shell in the Azure portal, which has contributor access to your resource group.
+
+az ad sp create-for-rbac --name "svacmlops" --role contributor --scopes /subscriptions/6b1027a1-e0a7-4004-bab9-24385ca33dd8/resourceGroups/rg-ihhsgdws-nlp-dev --sdk-auth
+
+{
+  "clientId": "424f0342-58d4-42d6-a944-b58a21a9ce9d",
+  "clientSecret": "dvT8Q~5kDIwN~nB1iUbitIm6M4gT7b5eRdpNSbrL",
+  "subscriptionId": "6b1027a1-e0a7-4004-bab9-24385ca33dd8",
+  "tenantId": "1ff2d101-7b5b-4533-a628-5c2505174693",
+  "activeDirectoryEndpointUrl": "https://login.microsoftonline.com",
+  "resourceManagerEndpointUrl": "https://management.azure.com/",
+  "activeDirectoryGraphResourceId": "https://graph.windows.net/",
+  "sqlManagementEndpointUrl": "https://management.core.windows.net:8443/",
+  "galleryEndpointUrl": "https://gallery.azure.com/",
+  "managementEndpointUrl": "https://management.core.windows.net/"
+}
