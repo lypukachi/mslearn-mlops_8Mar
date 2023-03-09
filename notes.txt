@@ -14,3 +14,4 @@ az ad sp create-for-rbac --name "svacmlops" --role contributor --scopes /subscri
   "galleryEndpointUrl": "https://gallery.azure.com/",
   "managementEndpointUrl": "https://management.core.windows.net/"
 }
+This is data for dev branch
